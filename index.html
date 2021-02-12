@@ -3,10 +3,88 @@
 <head>
 <title>Page Title</title>
 </head>
-<body>
-<h1> This is User</h1>
+<style>
+	* {
+	  box-sizing: border-box;
+	}
 
-<p style='color=red'> Hello World</p>
+	body {background-image:url("https://cdn.pixabay.com/photo/2020/10/21/12/21/sea-5672967_1280.jpg")}
+	header {
+	  background-color: #0000ff;
+	  padding: 30px;
+	  margin:-9px;
+	  text-align: center;
+	  font-size: 35px;
+	  color: white;
+	}
+	.nav {
+  background-color: green; 
+  list-style-type: none;
+  text-align: center;
+  margin: -16px;
+  padding: 0;
+}
+
+.nav li {
+  display: inline-block;
+  font-size: 20px;
+  padding: 20px;
+}
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+</style>
+<body>
+
+
+<header>Welcome User
+ </header>
+<nav class="nav">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+ </nav>
+<form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">India</option>
+      <option value="canada">UK</option>
+      <option value="usa">USA</option>
+    </select>
+  
+    <input src="#" type="submit" value="Submit">
+  </form>
+</div>
+
 
 </body>
 </html>
